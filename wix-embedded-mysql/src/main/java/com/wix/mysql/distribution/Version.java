@@ -12,7 +12,7 @@ import java.util.List;
 import static de.flapdoodle.embed.process.distribution.ArchiveType.*;
 import static java.lang.String.format;
 
-public enum Version implements IVersion {
+public enum     Version implements IVersion {
 
     v5_5_40("5.5", 40, MacOsVersion.v10_6, TGZ, Platform.Linux, Platform.OS_X),
     v5_5_50("5.5", 50, MacOsVersion.v10_9, TGZ, Platform.Linux, Platform.OS_X),
@@ -42,7 +42,8 @@ public enum Version implements IVersion {
     v5_7_latest(v5_7_27),
     v8_0_11("8.0", 11, MacOsVersion.v10_13),
     v8_0_17("8.0", 17, MacOsVersion.v10_14, TXZ, Platform.Linux, Platform.Windows, Platform.OS_X),
-    v8_latest(v8_0_17);
+    v8_0_18("8.0", 18, MacOsVersion.v10_14, TXZ, Platform.Linux, Platform.OS_X),
+    v8_latest(v8_0_18);
 
     private enum MacOsVersion {
         v10_6("osx"),
